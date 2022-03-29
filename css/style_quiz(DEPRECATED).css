@@ -1,0 +1,368 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+body {
+    background-color: #f4f4f4;
+    outline: 1px solid red;
+}
+.logoPurp {
+    width: 10%;
+    padding: 1%;
+    /* I don't know why the purple logo is getting huge if I don't keep its width to 10%; it's something about the flex display in the logoTitle class, but I don't know why. its getting bigger than the source image. WAIT IS IT THE PARAGRAPH? removed this: <p class="titleHRRN">House Rabbit Resource Network</p>. Nope it wasn't that. Put it back. */
+    outline: 1px solid red;
+}
+.logoTitle, .titleHRRN {
+    color: #33103B;
+    font-family: Rosario, Times, serif;
+    font-size: 32px;
+    display: flex;
+    align-items: center; 
+    outline: 1px solid red;
+}
+.navTab {
+    background-color: #33103B;
+    color: #f4f4f4;
+    border-radius: 12px 12px 0px 0px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Rosario, Times, serif;
+    font-size: 28px;
+    outline: 1px solid red;
+}
+.navTabDiv {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vw;
+    margin: 0px 10px 0px 10px;
+}
+.navLinkDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0px 0px 0px 20px;
+}
+h2 {
+    font-family: Rosario, Times, serif;
+    font-size: 28px;
+    text-decoration: underline;
+
+}
+h1 {
+    font-family: Rosario, Times, serif;
+    font-size: 32px;
+}
+h3 {
+    font-family: Rosario, Times, serif;
+    font-size: 24px;
+}
+.navLink {
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    outline: 1px solid red;
+    margin: 0px 5px 0px 5px;
+}
+.grid-container-nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70px;
+    /* could probably go back to this and make the links shape to the width of the text, but this is OK. Also could have the vertical line separators feasibly. */
+    /* UPDATE THIS TO HANDLE NAVTABDIV */
+    outline: 5px solid red;
+}
+.gridLink {
+    color: #010101;
+    outline: 1px solid red;
+}
+.ourMission {
+    font-family: Rosario, Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    outline: 1px solid red;
+}
+.heroImg {
+    position: relative;
+    width: 98vw;
+}
+.heroDiv {
+    position: relative;
+    width: 98vw;
+    outline: 1px solid red;
+}
+#aboutUs {
+    background-color: #FFCA31;
+    color: #33103B;
+    border: none;
+    text-align: center;
+    font-family: Rosario, Times, serif;
+    font-size: 28px;
+    padding: 5px;
+    width: 388px;
+    border-radius: 24px;
+    outline: 1px solid red;
+    /* I acknowledge that this is a dirty hackjob for now but it's gonna get the job done for the moment. Actually it seems to be better with position: absolute; previously it was this: [transform: translate(67vw, -80px);]. Anyways a media query would be good here to make it not look so bad when it goes to a mobile size viewport. */
+    position: absolute;
+    left: 70%;
+    top: 76%;
+}
+.CTAcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 95vw;
+    column-gap: 1vw;
+    padding: 1.5vw;
+    outline: 1px solid red;
+}
+.cardImg {
+    width: 95%;
+    padding: 2.5%;
+}
+.card {
+    background-color: #33103B;
+    color: #f4f4f4;
+    padding: 5px;
+    border-radius: 13px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 15% 30% 15%;
+    /* (maybe 50% 10% 20% 20% ?) shoudl go image title text button - need to respace this*/
+    outline: 1px solid red;
+}
+.cardText {
+    padding: 2.5%;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 18px;
+    outline: 1px solid red;
+}
+button {
+    background-color: #FFCA31;
+    color: #33103B;
+    border: none;
+    text-align: center;
+    font-family: Rosario, Times, serif;
+    font-size: 28px;
+    border-radius: 24px;
+    margin: 5px;
+    outline: 1px solid red;
+}
+#takeQuiz, #bunnyBoutique, #findOutMore {
+    width: 60%;
+    outline: 1px solid red;
+}
+.rightButton {
+    display: flex;
+    flex-direction: row-reverse;
+    outline: 1px solid red;
+}
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95vw;
+    grid-gap: 1vw;
+    padding: 0%;
+    outline: 1px solid red;
+}
+#imgFunRun {
+    width: 95%;
+    padding: 2.5%;
+}
+.funRunCard {
+    color: #33103b;
+    background-color: #C5E4CA;
+    border-radius: 13px;
+    outline: 1px solid red;
+
+}
+.funRunText {
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+    outline: 1px solid red;
+}
+#funRun, #topics, #learn {
+    margin: 2.5%;
+    outline: 1px solid red;
+}
+.rabbitArticlesDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95vw;
+    grid-gap: 1vw;
+    padding: 2%;
+    outline: 1px solid red;
+}
+.bunnyTopics {
+    background-color: #F7EAC3;
+    color: #33103b;
+    padding: 10px;
+    border-radius: 13px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 75%;
+    outline: 1px solid red;
+}
+.learningKids {
+    background-color: #F6C5CE;
+    color: #33103b;
+    padding: 10px;
+    border-radius: 13px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 75%;
+    outline: 1px solid red;
+}
+footer {
+    background-color: #33103b;
+    color: #f4f4f4;
+    outline: 1px solid red;
+}
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 11fr;
+    align-items:center;
+    outline: 1px solid red;
+}
+.contactInfoP {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+}
+.socMed {
+    width: 50px;
+    outline: 1px solid red;
+}
+.socialMedia {
+    display: flex;
+    flex-direction: row-reverse;
+    vertical-align: bottom;
+    outline: 1px solid red;
+}
+.logoLite {
+    width: 80%;
+    padding: 10%;
+    outline: 1px solid red;
+}
+
+/* ADD BELOW TO STYLE.CSS AND JUST USE ONE */
+.adoptionQuiz {
+    outline: 1px solid red;
+}
+.onlyQuestions {
+    color: #33103b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    outline: 1px solid red;
+    text-align: right;
+}
+.quizButtonDiv {
+    display: flex;
+    flex-direction: reverse;
+    outline: 3px dotted red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    left: 0px;
+    width: 300px;
+    float: right;
+    /* MAKE THIS WORK - needs to be pegged to the right border of the .fullquiz class, I think. Being a real pill about that though. Position: initial on fullQuiz and position: relative on .quizButtonDiv seems to help, but the width gets weird. How to make the 'normal' position be the right edge instead? maybe put them both in another div and have THAT new div be text-align right? */
+    /* of COURSE it was align-items, wow, who did this to me */
+}
+.quizButton {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+}
+.rightAlignExperiment {
+    text-align: right;
+}
+.quizQuestion {
+    text-align: left;
+}
+.anotherAlignExperiment {
+    display: flex;
+    flex-direction: column-reverse;
+    outline: 1px solid red;
+    align-items: flex-end;
+}
+.adoptionQuiz {
+    padding: 40px 100px 40px 100px;
+}
+.fullQuiz {
+    outline: 1px solid red;
+}
+@media only screen and (max-width: 700px){
+    .navTab {
+        background-color: #33103B;
+        color: #f4f4f4;
+        border-radius: 12px 12px 0px 0px;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Rosario, Times, serif;
+        font-size: 20px;
+        outline: 1px solid red;
+    }
+    .grid-container-nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 60px;
+        /* could probably go back to this and make the links shape to the width of the text, but this is OK. Also could have the vertical line separators feasibly. */
+        /* UPDATE THIS TO HANDLE NAVTABDIV */
+        outline: 5px solid red;
+    }
+
+
+
+
+    .onlyQuestions {
+        color: #33103b;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        outline: 1px solid red;
+        text-align: right;
+    }   
+
+
+
+    
+    .footerGrid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        align-items:center;
+        outline: 1px solid red;
+    } 
+}
+.slowlyRotate {
+    animation: rotation 5000ms infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* n.b. make sure you're putting animation classes and keyframes in the right document */
